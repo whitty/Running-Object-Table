@@ -15,9 +15,9 @@ endif
 
 .PHONY: clean
 
-SUPPRESS_WARNINGS = 0612
+SUPPRESS_WARNINGS =
 CS_FLAGS += $(foreach _,$(SUPPRESS_WARNINGS),-nowarn:$(_))
-
+CS_FLAGS += -unsafe
 
 OBJECTS = rot.dll
 
