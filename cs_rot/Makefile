@@ -1,11 +1,11 @@
 ifdef WINE
 
 ifndef MONO_DIR
-MONO_DIR="c:/Program\ Files/Mono-2.6.7"
+MONO_DIR=c:/Program Files/Mono-2.6.7
 endif
-MONO_LIB="$(MONO_DIR)/lib/mono/2.0"
+MONO_LIB=$(MONO_DIR)/lib/mono/2.0
 
-MSCS="$(WINE) $(MONO_DIR)/bin/mono.exe $(MONO_LIB)/gmcs.exe"
+MSCS="$(WINE)" "$(MONO_DIR)/bin/mono.exe" "$(MONO_LIB)/gmcs.exe"
 
 else
 
